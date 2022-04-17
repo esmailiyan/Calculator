@@ -1,0 +1,241 @@
+<!-- saved from url=(0071)file:///C:/Users/turborayane/Desktop/index_html/New%20folder/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+      
+    <title>
+        Machin Hesab 
+    </title>  
+        <link href="./ماشین حساب_files/css2" rel="stylesheet">  
+        <!-- CSS property to create interactive calculator interface -->  
+    <style>  
+body    
+{    
+background-color: tan;    
+}    
+.box    
+{    
+background-color: black;    
+height: 350px;    
+width: 350px;    
+border-radius: 10px;    
+position: relative;    
+top: 80px;    
+left: 40%;    
+}   
+.display    
+{    
+background-color: #222;    
+width: 315px;    
+position: relative;    
+left: 15px;    
+top: 20px;    
+height: 40px;    
+}    
+.display input    
+{    
+position: relative;    
+left: 2px;    
+top: 2px;    
+height: 40px;    
+color: black;    
+background-color: #bccd95;    
+font-size: 21px;    
+text-align: right;    
+}   
+.keys    
+{    
+position: relative;    
+top: 15px;    
+}    
+.button    
+{    
+width: 40px;    
+height: 30px;    
+border: none;    
+border-radius: 8px;    
+margin-left: 20px;    
+cursor: pointer;    
+border-top: 2px solid transparent;    
+}    
+.button.gray    
+{    
+color: black;  
+font-color: black;    
+background-color: #6f6f6f;    
+border-bottom: black 2px solid;    
+border-top: 2px #6f6f6f solid;    
+}  
+.title:hover {  
+   color: #fff;  
+}  
+.title {  
+margin-bottom: 10px;  
+margin-top: 30px;  
+padding: 5px 0;  
+font-size: 40px;  
+font-weight: bold;  
+text-align: center;  
+color: black;  
+font-family: 'Cookie', cursive;  
+}  
+    
+.button.pink    
+{    
+color: black;    
+background-color: #ff4561;    
+border-bottom: black 2px solid;    
+}    
+.button.black    
+{    
+color: black;    
+background-color: 303030;    
+border-bottom: black 2px solid;    
+border-top: 2px 303030 solid;    
+font-weight: bold;  
+}    
+.button.orange    
+{    
+color: black;    
+background-color: FF9933;    
+border-bottom: black 2px solid;    
+border-top: 2px FF9933 solid;    
+}
+.button.blue
+{
+color: black;
+background-color:3366CC; 
+border-bottom: black 2px solid;
+font-color:black;
+}
+ .button.teal1
+{
+background-color:669999;
+border-bottom:black 2px solid;
+font-color:black;
+height:30px;
+width:170px;
+color:black;
+}
+.button.teal2
+{
+color:black;
+background-color:669999;
+font-color:black;
+border-bottom:black 2px solid;
+height:30px;
+width:40px;
+}
+
+.button.teal3
+{
+color:black;
+background-color:669999;
+font-color:black;
+border-bottom:black 2px solid;
+height:30px;
+width:40px;
+}
+
+
+
+ 
+.gray:active    
+{    
+border-top: black 2px solid;    
+border-bottom: 2px #6f6f6f solid;    
+}    
+.pink:active    
+{    
+border-top:black 2px solid;    
+border-bottom:#ff4561 2px solid;    
+}    
+.black:active    
+{    
+border-top: black 2px solid;    
+border-bottom: #303030 2px solid;    
+}    
+.orange:active    
+{    
+border-top: black 2px solid;    
+border-bottom: FF9933 2px solid;    
+}
+.blue:active
+{
+ border-top: black 2px solid;
+border-bottom:#3366CC 2px solid;
+p    
+{    
+line-height: 10px;    
+}  
+.
+
+</style>  
+</head> 
+
+
+ 
+<body>  
+    <div class="box">    
+        <div class="display">  
+        <input type="text" readonly="" size="25" id="d">  
+        </div>    
+        <div class="keys">    
+               <p> <input type="button" class="button gray" value="mrc" onclick="c(&quot;Created....................&quot;)">  
+               <input type="button" class="button gray" value="m-" onclick="c(&quot;...............by............&quot;)">  
+               <input type="button" class="button gray" value="m+" onclick="c(&quot;.....................Anoop&quot;)">  
+               <input type="button" class="button pink" value="/" onclick="v(&quot;/&quot;)">
+               <input type="button" class="button blue" value="log" onclick="v(&quot;log&quot;)">
+			   </p>    
+               <p> <input type="button" class="button white" value="7" onclick="v(&quot;7&quot;)">  
+               <input type="button" class="button white" value="8" onclick="v(&quot;8&quot;)">  
+               <input type="button" class="button white" value="9" onclick="v(&quot;9&quot;)">  
+               <input type="button" class="button pink" value="*" onclick="v(&quot;*&quot;)"> 
+			   <input type="button" class="button blue" value="√" onclick="v(&quot;√&quot;)">
+			   </p>    
+               <p> <input type="button" class="button white" value="4" onclick="v(&quot;4&quot;)">  
+               <input type="button" class="button white" value="5" onclick="v(&quot;5&quot;)">  
+               <input type="button" class="button white" value="6" onclick="v(&quot;6&quot;)">  
+               <input type="button" class="button pink" value="-" onclick="v(&quot;-&quot;)">
+                  <input type="button" class="button blue" value="X!" onclick="v(&quot;X!&quot;)"> 
+			   </p>    
+               <p> <input type="button" class="button white" value="1" onclick="v(&quot;1&quot;)">  
+               <input type="button" class="button white" value="2" onclick="v(&quot;2&quot;)">  
+               <input type="button" class="button white" value="3" onclick="v(&quot;3&quot;)">  
+               <input type="button" class="button pink" value="+" onclick="v(&quot;+&quot;)">
+               <input type="button" class="button blue" value="c(x,y)" onclick="v(&quot;c(x,y)&quot;)">
+			   </p>    
+               <p> <input type="button" class="button white" value="0" onclick="v(&quot;0&quot;)">   
+               <input type="button" class="button white" value="." onclick="v(&quot;.&quot;)">  
+               <input type="button" class="button white" value="C" onclick="c(&quot;&quot;)">  
+               <input type="button" class="button orange" value="=" onclick="e()">
+               <input type="button" class="button blue" value="x^y" onclick="v(&quot;x^y&quot;)">
+			   </p>
+			   <p><input type="button" class="button teal1" value="f(x)" onclick="v(&quot;f(x)&quot;)">
+			   <input type="button" class="button teal2" value="x" onclick="v(&quot;x&quot;)">
+			   <input type="button" class="button teal3" value="^" onclick="(&quot;^&quot;)"></p>
+
+
+	   </div>    
+</div>   
+  
+<script>  
+function c(val)    
+{    
+document.getElementById("d").value=val;    
+}    
+function v(val)    
+{document.getElementById("d").value+=val;    
+}    
+function e()    
+{    
+try    
+    {    
+     c(eval(document.getElementById("d").value))    
+    }    
+    catch(e)    
+    {    
+     c('Error') }    
+}  
+</script>  
+  
+</body>
+</html>
