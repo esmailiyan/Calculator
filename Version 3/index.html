@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table class="calculator"><tbody>
+        <tr>
+            <td colspan="6"><input class="display-box" type="text" id="result" disabled=""></td>
+            <td colspan="1"><input class="button" type="button" value="Clear" onclick="clearScreen()" style="background-color: #fb0066;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="display('7')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="8" onclick="display('8')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="9" onclick="display('9')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="/" onclick="display('/')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="x²" onclick="squar()" style="background-color: #64278f;"></td> 
+            <td><input class="button" type="button" value="|x|" onclick="abs()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="√x" onclick="sqrt()" style="background-color: #64278f;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="display('4')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="5" onclick="display('5')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="6" onclick="display('6')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="*" onclick="display('*')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="x⁻¹" onclick="inv()" style="background-color: #64278f;"></td> 
+            <td><input class="button" type="button" value="x!" onclick="factorialize()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="log" onclick="log()" style="background-color: #64278f;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="display('1')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="2" onclick="display('2')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="3" onclick="display('3')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="-" onclick="display('-')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="(" onclick="display('(')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value=")" onclick="display(')')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="P(n.r)" onclick="display('p')" style="background-color: #fb7900;"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="." onclick="display('.')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="0" onclick="display('0')" style="background-color: #0082fb;"></td>
+            <td><input class="button" type="button" value="mod" onclick="display('%')" style="background-color: #fb7900;"></td>
+            <td><input class="button" type="button" value="+" onclick="display('+')" style="background-color: #fb7900;"></td>
+            <td colspan="2"><input class="button" type="button" value="=" onclick="calculate()" style="background-color: #fb0066;"></td>
+            <td><input class="button" type="button" value="C(n.r)" onclick="display('c')" style="background-color: #fb7900;"></td>
+        </tr>
+            <td><input class="button" type="button" value="sin" onclick="sin()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="cos" onclick="cos()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="tan" onclick="tan()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="cot" onclick="cot()" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="e" onclick="display(Math.E)" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="log₂" onclick="log2()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="a^n" onclick="display(',')" style="background-color: #fb7900;"></td>
+        </tr> 
+        <tr>
+            <td><input class="button" type="button" value="and" onclick="display('&')" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="or" onclick="display('|')" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="not" onclick="display('!')" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="xor" onclick="display('^')" style="background-color: #8f2727;"></td> 
+            <td><input class="button" type="button" value="π" onclick="display(Math.PI)" style="background-color: #8f2727;"></td>
+            <td><input class="button" type="button" value="log₁₀" onclick="log10()" style="background-color: #64278f;"></td>
+            <td><input class="button" type="button" value="a^n⁻¹" onclick="display(',1/')" style="background-color: #fb7900;"></td>
+            
+        </tr>
+        <!-- <td><input class="button" type="button" value="a^(1/n)" onclick=""></td> -->
+        <!-- <tr><td><input class="button" type="button" value="f(x)" onclick=""></td> -->
+        <!-- <td><input class="button" type="button" value="x" onclick=""></td> -->
+        <!-- <td><input class="button" type="button" value="x^y" onclick=""></td> -->
+        <!-- <td><input class="button" type="button" value="lim┬" onclick=""></td> -->
+        <!-- <td><input class="button" type="button" value="c(n,r)" onclick=""></td> -->
+    </tbody></table>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
